@@ -54,6 +54,37 @@ productCards.forEach(card => {
   });
 });
 
+// Category hover effect
+const categoryCards = document.querySelectorAll('.category-card');  
+categoryCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    const img = card.querySelector('img');
+    img.style.transform = 'scale(1.1)';
+    img.style.transition = 'transform 0.5s ease';
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    const img = card.querySelector('img');
+    img.style.transform = 'scale(1)';
+  });
+});
+
+// News hover effect
+const newsCards = document.querySelectorAll('.news-card');
+newsCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    const img = card.querySelector("img");
+    img.style.transform = 'scale(1.1)'
+    img.style.transition = 'transform 0.5s ease';
+
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    const img = card.querySelector("img");
+    img.style.transform = 'scale(1)'
+  })
+})
+
 // Newsletter form submission
 const newsletterForm = document.querySelector('.newsletter-form');
 
