@@ -129,8 +129,8 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
   z-index: 1001;
   border-top: 2px solid var(--razer-green);
   padding: 10px 0;
@@ -140,6 +140,8 @@ header {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown-menu li {
