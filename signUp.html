@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reader Clone</title>
+  <link rel="stylesheet" href="signUp.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" alt="Logo" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Login/Registration Form -->
+  <div id="signUp-form" class="form-container">
+    <h2>Sign Up</h2>
+    <form id="signUpForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <span id="login-link" onclick="window.location.href='/login.html'">Login</span></p>
+  </div>
+
+
+  <script src="signUp.js"></script>
+</body>
+</html>
